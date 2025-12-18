@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+    }
+    nav {
+      background: #333;
+      color: #fff;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px;
+      border-bottom: 1px solid #ccc;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    form input, form textarea, form button {
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <main>
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello! I’m Oluwaseun Asekoni, a passionate web developer.</p>
+      <video width="400" controls>
+        <source src="FOLA - bye bye (Official Video).mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a web developer with skills in front-end and back-end technologies.</p>
+      <audio controls>
+        <source src="FOLA-bye-bye-(CeeNaija.com).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <h2>My Work</h2>
+      <ul>
+        <li><a href="project1.html">Project One</a> - A personal blog</li>
+        <li><a href="project2.html">Project Two</a> - A portfolio website</li>
+        <li><a href="project3.html">Project Three</a> - A small e-commerce app</li>
+      </ul>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <table border="1" cellpadding="8">
+        <tr>
+          <th>Year</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>2023 - Present</td>
+          <td>Front-End Developer at Don's Tech Company</td>
+        </tr>
+        <tr>
+          <td>2021 - 2023</td>
+          <td>Internship at SeunSekony Tech</td>
+        </tr>
+        <tr>
+          <td>2019 - 2021</td>
+          <td>Bachelor’s in Computer Science</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 My Portfolio | Designed by Oluwaseun Asekoni</p>
+  </footer>
+
+</body>
+</html>
